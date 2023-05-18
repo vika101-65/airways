@@ -1,9 +1,14 @@
 <mat-card>
   <mat-card-content>
-    <mat-radio-group  (change)="a()">
-      <mat-radio-button class="example-margin" value="1" disableRipple="false" checked="true">Round Trip</mat-radio-button>
-      <mat-radio-button class="example-margin" value="2">One Way</mat-radio-button>
+    <mat-radio-group  (change)="a()" [(ngModel)]="labelPosition">
+      <mat-radio-button color="primary" class="example-margin" value="two" disableRipple="false" checked="true">Round Trip</mat-radio-button>
+      <mat-radio-button color="primary" class="example-margin pr" value="one">One Way</mat-radio-button>
     </mat-radio-group>
+    
+    <app-flight-direction-selection></app-flight-direction-selection>
+   
+
   </mat-card-content>
 </mat-card>
-<!-- [(ngModel)]="labelPosition" -->
+
+

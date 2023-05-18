@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./book-fligts.component.scss']
 })
 export class BookFligtsComponent {
+  labelPosition: 'two' | 'one' = 'two';
+
   a() {
-    console.log('777')
+    console.log('labelPosition', this.labelPosition)
   }
+
 }

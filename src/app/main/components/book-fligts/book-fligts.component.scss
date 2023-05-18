@@ -1,5 +1,13 @@
+// @use '@angular/material' as mat;
+// @use '../../../1.scss'as bot;
+
+
+// $my-palette: mat.define-palette(bot.$md-green);
+// border-color: mat.get-color-from-palette($my-palette, 500);
+
 .mat-mdc-card {
-  width: 580px;
+  display: flex;
+  max-width: 580px;
   height: 390px;
   background: rgba(255, 255, 255, 0.85);
   border-radius: 8px;
@@ -17,41 +25,45 @@
 
 .mat-mdc-radio-button ~ .mat-mdc-radio-button {
   margin-left: 16px;
-  columns: red;
-}
-
-:host ::ng-deep .mat-mdc-radio-button.cdk-focused .mdc-radio .mdc-radio__native-control:enabled:checked+.mdc-radio__background .mdc-radio__outer-circle {
-    border-color: #11397E;
-    
-}
-
-:host ::ng-deep .mat-mdc-radio-button .mdc-radio .mdc-radio__native-control:enabled:checked+.mdc-radio__background .mdc-radio__outer-circle {
-  border-color: #11397E;
   
 }
 
-:host ::ng-deep .mat-mdc-radio-button.cdk-focused .mdc-radio .mdc-radio__native-control:enabled+.mdc-radio__background .mdc-radio__inner-circle {
-  border-color: #11397E;
-}
+// :host ::ng-deep .mat-mdc-radio-button.cdk-focused .mdc-radio .mdc-radio__native-control:enabled:checked+.mdc-radio__background .mdc-radio__outer-circle {
+//     border-color: #11397E;
+// }
 
-:host ::ng-deep .mat-mdc-radio-button .mdc-radio .mdc-radio__native-control:enabled+.mdc-radio__background .mdc-radio__inner-circle {
-  border-color: #11397E;
-}
-
-:host ::ng-deep .mat-mdc-radio-button:hover .mdc-radio .mdc-radio__native-control:enabled:checked+.mdc-radio__background .mdc-radio__outer-circle {
-  border-color: #11397E;
+// :host ::ng-deep .mat-mdc-radio-button .mdc-radio .mdc-radio__native-control:enabled:checked+.mdc-radio__background .mdc-radio__outer-circle {
+//   border-color: #11397E;
   
+// }
+
+// :host ::ng-deep .mat-mdc-radio-button.cdk-focused .mdc-radio .mdc-radio__native-control:enabled+.mdc-radio__background .mdc-radio__inner-circle {
+//   border-color: #11397E;
+// }
+
+// :host ::ng-deep .mat-mdc-radio-button .mdc-radio .mdc-radio__native-control:enabled+.mdc-radio__background .mdc-radio__inner-circle {
+//   border-color: #11397E;
+// }
+
+// :host ::ng-deep .mat-mdc-radio-button:hover .mdc-radio .mdc-radio__native-control:enabled:checked+.mdc-radio__background .mdc-radio__outer-circle {
+//   border-color: #11397E;
+  
+// }
+
+// :host ::ng-deep .mat-mdc-radio-button:hover .mdc-radio .mdc-radio__native-control:enabled+.mdc-radio__background .mdc-radio__inner-circle {
+//   border-color: #11397E;
+// }
+
+// .mat-mdc-radio-button.mat-accent {
+//   --mdc-radio-selected-focus-icon-color: none;
+//   --mdc-radio-selected-hover-icon-color: none;
+//   --mdc-radio-selected-icon-color: none;
+//   --mdc-radio-selected-pressed-icon-color: none;
+//   --mat-radio-checked-ripple-color: none;
+
+// }
+:host ::ng-deep .mat-mdc-select-arrow {
+ display: none;
 }
 
-:host ::ng-deep .mat-mdc-radio-button:hover .mdc-radio .mdc-radio__native-control:enabled+.mdc-radio__background .mdc-radio__inner-circle {
-  border-color: #11397E;
-}
 
-.mat-mdc-radio-button.mat-accent {
-  --mdc-radio-selected-focus-icon-color: none;
-  --mdc-radio-selected-hover-icon-color: none;
-  --mdc-radio-selected-icon-color: none;
-  --mdc-radio-selected-pressed-icon-color: none;
-  --mat-radio-checked-ripple-color: none;
-
-}
